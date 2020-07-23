@@ -22,12 +22,6 @@ To install all the frontend/backend dependencies, Please run the following comma
 npm install && npm postinstall
 ```
 
-To run the unit tests, Please run the following command:
-
-```javascript
-npm run test
-```
-
 Once everything is installed, then run the following command to start the nodejs and reactjs server.
 
 
@@ -35,6 +29,12 @@ Once everything is installed, then run the following command to start the nodejs
 npm run start
 ```
 Browse http://localhost:3000 to open the application.
+
+To run the unit tests, Please run the following command:
+
+```javascript
+npm run test
+```
 
 
 
