@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ordersDB = exports.events = void 0;
+var event_1 = require("./src/classes/event");
+var order_1 = require("./src/classes/order");
+var rules_1 = require("./src/rules");
+exports.events = [];
+// for demo we will just have single empty order in the db
+exports.ordersDB = [new order_1.Order(1, [])];
+var discountOnLastExperience = new rules_1.DiscountOnLastExperience(5, "Buy 5, Get 20% off the 5th experience", 20);
+var kidsPartyEvent = new event_1.Event(1, "Kids Party", 220);
+kidsPartyEvent.addPromotion(discountOnLastExperience);
+var wineTourEvent = new event_1.Event(2, "Wine Tour", 440);
+wineTourEvent.addPromotion(discountOnLastExperience);
+wineTourEvent.addPromotion(new rules_1.DiscountOnEveryNItems(4, "Buy 4, ONLY Pay for 3", wineTourEvent.cost));
+var teamBuildingEvent = new event_1.Event(3, "Team Building", 800);
+teamBuildingEvent.addPromotion(discountOnLastExperience);
+teamBuildingEvent.addPromotion(new rules_1.DiscountOnEveryNItems(2, "Buy 2 for $1500", 100));
+var picnicEvent = new event_1.Event(4, "Picnic", 110);
+picnicEvent.addPromotion(discountOnLastExperience);
+picnicEvent.addPromotion(new rules_1.DiscountAdditonalItemFree(2, "Buy 2, get 1 free", 1));
+picnicEvent.addPromotion(new rules_1.DiscountOnEveryNItems(4, "Buy 4, ONLY Pay for 3", picnicEvent.cost));
+exports.events.push(kidsPartyEvent);
+exports.events.push(wineTourEvent);
+exports.events.push(teamBuildingEvent);
+exports.events.push(picnicEvent);
