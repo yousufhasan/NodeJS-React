@@ -18,7 +18,7 @@ const discountOnLastExperience = new DiscountOnLastExperience(
 );
 
 const kidsPartyEvent = new Event(1, "Kids Party", 220);
-kidsPartyEvent.addPromotion(discountOnLastExperience);
+kidsPartyEvent.addPromotion(discountOnLastExperience); // you could add 1 or more promotions easily
 
 const wineTourEvent = new Event(2, "Wine Tour", 440);
 wineTourEvent.addPromotion(discountOnLastExperience);
