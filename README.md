@@ -21,7 +21,7 @@ To install all the frontend/backend dependencies, Please run the following comma
 ```javascript
 npm install && npm postinstall
 ```
-once everything is installed, then run the following command to start the nodejs and reactjs server.
+Once everything is installed, then run the following command to start the nodejs and reactjs server.
 
 
 ```javascript
