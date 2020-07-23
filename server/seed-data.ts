@@ -12,9 +12,9 @@ export const events: IEvent[] = [];
 export const ordersDB: Order[] = [new Order(1, [])];
 
 const discountOnLastExperience = new DiscountOnLastExperience(
-  5,
-  "Buy 5, Get 20% off the 5th experience",
-  20
+  5, /* rule quantity */
+  "Buy 5, Get 20% off the 5th experience", /* rule description */
+  20 /*discount offer */
 );
 
 const kidsPartyEvent = new Event(1, "Kids Party", 220);
