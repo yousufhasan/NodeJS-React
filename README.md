@@ -9,6 +9,10 @@ That would mean we can buy 2 items for 1500 and 4 items for 3000.
 
 2) If an event has multiple promotions, both promotions will be applied. For example: If 1 rule says "Buy 2 get 1 free" and another rule says "Buy 4 and only pay for 3" then both rules will be applicable, which in case would mean if we buy 4 events we will get 2 free events and will only pay for 3 events since the second rule is applicable as well.
 
+A demo of the application is deployed at the following url:
+
+https://polar-depths-03028.herokuapp.com/
+
 
 ### Approach
 
