@@ -1,4 +1,4 @@
-# NodeJS-CSV-JSON
+# NodeJS-React Application
 
 This is a full stack javascript solution where i am using nodejs/expressjs at the backend and reactjs on the front end. To show the full stack behavior all the discount logic is applied at the nodejs level.
 
